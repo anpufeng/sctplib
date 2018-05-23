@@ -53,6 +53,7 @@
 #include <glib.h>
 #include <string.h>
 #include <stdlib.h>
+#include <sys/time.h>
 
 
 #ifdef  STDC_HEADERS
