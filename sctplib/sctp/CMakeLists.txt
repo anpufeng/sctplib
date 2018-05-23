@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.5)
 project(sctp C)
 
 set(CMAKE_C_STANDARD 99)
@@ -9,7 +9,11 @@ IF(CMAKE_SYSTEM_NAME MATCHES "Darwin")
             /usr/local/lib/glib-2.0/include
     )
 ELSE() #linux
-
+    INCLUDE_DIRECTORIES (
+            /usr/include/glib-2.0
+            /usr/lib/x86_64-linux-gnu/glib-2.0/include
+    )
+    ADD_DEFINITIONS (-DLINUX)
 ENDIF()
 
 

@@ -6,7 +6,7 @@ PROJECT (programs)
 IF(CMAKE_SYSTEM_NAME MATCHES "Darwin")
     set(lib_dep sctp glib-2.0)
 ELSE() #linux
-
+    set(lib_dep sctp glib-2.0)
 ENDIF()
 
 add_executable(chargen_server chargen_server.c)
