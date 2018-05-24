@@ -49,6 +49,7 @@
 #include <stdlib.h>         /* for atoi() under Linux */
 #include <curses.h>         /* for Ncurses display */
 #include <signal.h>
+#include "sctp_wrapper.h"
 
 #define POLLIN     0x001
 #define POLLPRI    0x002

@@ -42,6 +42,7 @@
  */
 
 #include "sctp.h"
+#include "sctp_wrapper.h"
 #include <signal.h>
 #include <unistd.h>
 #include <string.h>

@@ -33,7 +33,7 @@
 #include <time.h>
 #include "sctp.h"
 #include "sctptest.h"
-
+#include "sctp_wrapper.h"
 
 
 /* payload: header (6 bytes) and body (initially 26 bytes) */

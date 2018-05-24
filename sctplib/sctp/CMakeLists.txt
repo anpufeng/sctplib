@@ -18,6 +18,7 @@ ENDIF()
 
 
 add_library(sctp STATIC
+        sctp.h
         adaptation.c
         auxiliary.c
         chunkHandler.c
